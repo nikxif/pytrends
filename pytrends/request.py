@@ -195,7 +195,7 @@ class TrendReq(object):
                 self.related_queries_widget_list.append(widget)
         return
 
-    def interest_over_time(self):
+    def interest_over_time(self, geo=''):
         """Request data from Google's Interest Over Time section and return a dataframe"""
 
         over_time_payload = {
